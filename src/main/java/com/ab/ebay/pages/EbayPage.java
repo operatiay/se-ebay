@@ -2,7 +2,7 @@ package com.ab.ebay.pages;
 
 import org.openqa.selenium.WebDriver;
 
-public class EbayPage extends AbstractPage{
+public abstract class EbayPage extends AbstractPage{
 
 
     public EbayPage(WebDriver driver) {
@@ -14,6 +14,4 @@ public class EbayPage extends AbstractPage{
         this(parentPage.getDriver());
         setParentPage(parentPage);
     }
-
-
 }
